@@ -5,7 +5,7 @@ _base_ = [
     '../_base_/default_runtime.py',
 ]
 dataset_type = 'mmcls.CustomDataset'
-data_root = 'data/custom_dataset/'
+data_root = 'data/custom_dataset'
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
