@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y ffmpeg libsm6 libxext6 git ninja-build 
 
 # Install MMEngine and MMCV
 RUN pip install openmim
-RUN mim install mmengine "mmcv>=2.0.0"
+RUN mim install mmengine "mmcv<2.1.0"
 RUN mim install mmsegmentation mmdet
 
 # Install MMSelfSup
