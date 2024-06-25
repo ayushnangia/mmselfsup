@@ -3,6 +3,8 @@ ARG CUDA="11.3"
 ARG CUDNN="8"
 
 FROM pytorch/pytorch:${PYTORCH}-cuda${CUDA}-cudnn${CUDNN}-devel
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub 32
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/7fa2af80.pub
 
 ENV TORCH_CUDA_ARCH_LIST="6.0 6.1 8.0 7.0+PTX"
 ENV TORCH_NVCC_FLAGS="-Xfatbin -compress-all"
