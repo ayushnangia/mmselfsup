@@ -33,5 +33,5 @@ model = dict(
     init_cfg=None)
 
 # dataset 16 x 256
-train_dataloader = dict(batch_size=256, num_workers=16)
+train_dataloader = dict(batch_size=32, num_workers=2)
 find_unused_parameters = True
