@@ -1,4 +1,3 @@
-_base_ = 'mae_vit-base-p16_8xb512-amp-coslr-400e_in1k.py'
 _base_ = [
     '../_base_/models/mae_vit-base-p16.py',
     # '../_base_/datasets/imagenet_mae.py',
