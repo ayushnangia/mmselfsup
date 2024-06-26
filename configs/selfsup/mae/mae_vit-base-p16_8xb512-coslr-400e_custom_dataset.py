@@ -21,8 +21,8 @@ train_pipeline = [
 
 # dataset 8 x 512
 train_dataloader = dict(
-    batch_size=512,
-    num_workers=8,
+    batch_size=32,
+    num_workers=2,
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
     collate_fn=dict(type='default_collate'),
